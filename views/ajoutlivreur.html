@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Ajouter un livreur </title>
+
+</head>
+<body>
+    <div>
+    <form method="POST" action="ajoutlivreur.php">
+            <center> AJOUTER UN LIVREUR </center>
+            <center>
+                    <table>
+                        <tr>
+                            <td>
+                                 <label class="control-label" for="success"> Saisir le cin </label>
+                            </td>
+                            <td>
+                                 <input type="number" class="form-control" id="success" name="cin"/>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                 <label class="control-label" for="warning">saisir le nom</label>
+                            </td>
+                            <td>
+                                 <input type="text" class="form-control" id="warning" name="nom"/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                  <label class="control-label" for="error">saisir le prenom</label>
+                            </td>
+                            <td>
+                                  <input type="text" class="form-control" id="error" name="prenom"/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                 <label>selectionner le secteur</label>
+                            </td>
+                            <td>
+                                 <select class="form-control" name="secteur" type="text">
+                                    <option>Ariana</option>
+                                    <option>Béja</option>
+                                    <option>Ben Arous</option>
+                                    <option>Bizerte</option>
+                                    <option>Gabes</option>
+                                    <option>Gafsa</option>
+                                    <option>Jendouba</option>
+                                    <option>Kairouan</option>
+                                    <option>Kasserine</option>
+                                    <option>Kebili</option>
+                                    <option>La Manouba</option>
+                                    <option>Le Kef</option>
+                                    <option>Mahdia</option>
+                                    <option>Médenine</option>
+                                    <option>Monastir</option>
+                                    <option>Nabeul</option>
+                                    <option>Sfax</option>
+                                    <option>Sidi Bouzid</option>
+                                    <option>Siliana</option>
+                                    <option>Sousse</option>
+                                    <option>Tataouine</option>
+                                    <option>Tozeur</option>
+                                    <option>Tunis</option>
+                                    <option>Zaghouan</option>
+                                 </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                </br>
+                                 <input type="submit" name="ajouter" value="ajouter" class="boutton">
+                            </td>
+                        </tr>                       
+                </table>
+                </center>
+                </form>
+        </div>
+        </body>
+        </html>
