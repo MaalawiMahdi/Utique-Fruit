@@ -98,7 +98,7 @@ try{
 	}
 	
 	function rechercherListelivreurs($secteur){
-		$sql="SELECT * from livreur where secteur=$secteur";
+		$sql="SELECT * from livreur where secteur='".$secteur."'";
 		$db = config::getConnexion();
 		try{
 		$liste=$db->query($sql);
@@ -108,6 +108,18 @@ try{
             die('Erreur: '.$e->getMessage());
         }
 	}
+
+	function trieListelivreurs(){
+        $sql="SELECT * From livreur ORDER BY(secteur) ASC";
+        $db = config::getConnexion();
+        try{
+        $liste=$db->query($sql);
+        return $liste;
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
 }
 
 ?>

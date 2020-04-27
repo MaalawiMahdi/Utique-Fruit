@@ -20,7 +20,7 @@ if (isset($_GET['id_livraison'])){
 <div class="col-md-6">
     <div class="panel panel-default">
     <div class="panel-heading">
-       <center> MODIFIER UNE LIVRAISON </center> 
+     <h2>  <center> MODIFIER UNE LIVRAISON </center> </h2>
     </div>
     <div class="panel-body">
         <form role="form">

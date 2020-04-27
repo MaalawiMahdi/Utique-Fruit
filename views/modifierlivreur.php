@@ -22,7 +22,7 @@ if (isset($_GET['cin'])){
 <div class="col-md-6">
     <div class="panel panel-default">
     <div class="panel-heading">
-       <center> MODIFIER UN LIVREUR </center>
+      <h2> <center> MODIFIER UN LIVREUR </center> </h2>
        <br>
     </div>
     <div class="panel-body">

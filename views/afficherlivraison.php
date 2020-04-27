@@ -14,7 +14,7 @@
 		<div class="col-md-6">
         <div class="panel panel-default">
 		 <div class="panel-heading">
-    <center> LES EVENEMENTS EN COURS </center> 
+    <h2> <center> LES EVENEMENTS EN COURS </center> </h2>
     </div>
 <div class="table-responsive">
     <center>
@@ -38,9 +38,12 @@ foreach($listelivraisons as $row){
 				<td align="center"> <?PHP echo $row['num_commande']; ?> </td>
                 <td align="center"> <?PHP echo $row['cin_livreur']; ?> </td>
                 <td align="center"> 
+                    <br>
                     <form method="POST" action="supprimerlivraison.php">
-	                    <input type="submit" name="supprimer" value="supprimer" class="boutton">
-	                    <input type="hidden" value="<?PHP echo $row['id_livraison']; ?>" name="id_livraison">
+	                   <input type="submit" name="supprimer" value="supprimer" class="boutton">
+	                   <input type="hidden" value="<?PHP echo $row['id_livraison']; ?>" name="id_livraison">   
+                       <!-- <img src="cor.png" width="50" height="50" > -->
+
 	                </form>
 	            </td>
 	            <td align="center"><a href="modifierlivraison.php?id_livraison=<?PHP echo $row['id_livraison']; ?>">

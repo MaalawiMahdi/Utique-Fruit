@@ -102,6 +102,18 @@ try{
             die('Erreur: '.$e->getMessage());
         }
 	}
+
+	function trieListelivraisons(){
+        $sql="SELECT * From livraison ORDER BY(num_commande) ASC";
+        $db = config::getConnexion();
+        try{
+        $liste=$db->query($sql);
+        return $liste;
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
 }
 
 ?>

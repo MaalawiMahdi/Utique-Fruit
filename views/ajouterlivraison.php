@@ -5,20 +5,22 @@
     <title>Ajout d'un livraison</title>
     <link rel="stylesheet" type="text/css" href="style.css">
    
+   
 </head>
 <body>
-    <form method="GET" action="ajoutlivraison.php">
+  <script type="text/javascript" src="controlsaisi.js"></script>
+    <form method="GET" action="ajoutlivraison.php" name="f">
    
     <div>
-            <center> AJOUTER UNE LIVRAISON </center>
+           <h2> <center> AJOUTER UNE LIVRAISON </center></h2>
             <center>
                     <table>
                         <tr>
                             <td>
-                                 <label class="control-label" for="success"> Saisir l'identifiant de la livraison </label>
+                                <label class="control-label" for="success"> Saisir l'identifiant de la livraison </label>
                             </td>
                             <td>
-                                 <input type="number" name="id_livraison"/>
+                                 <input type="" name="id_livraison"/>
                             </td>
                         </tr>
                         
@@ -27,7 +29,7 @@
                                  <label class="control-label" for="warning"> Saisir le numéro de commande </label>
                             </td>
                             <td>
-                                 <input type="number" name="num_commande"/>
+                                 <input type="" name="num_commande"/>
                             </td>
                         </tr>
 
@@ -65,7 +67,7 @@
                             <td></td>
                             <td>
                                  </br>
-                                 <input type="submit" name="ajouter" value="ajouter" class="boutton">
+                                 <input type="submit" name="ajouter" value="ajouter" class="boutton" onclick="test()">
                             </td>
                         </tr>
 

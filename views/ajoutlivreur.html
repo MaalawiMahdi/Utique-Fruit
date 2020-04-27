@@ -4,38 +4,39 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <title> Ajouter un livreur </title>
+   
 
 </head>
 <body>
-    <div>
-    <form method="POST" action="ajoutlivreur.php">
-            <center> AJOUTER UN LIVREUR </center>
+     <script type="text/javascript" src="controlsaisi.js"></script>
+    <form method="POST" action="ajoutlivreur.php" name="f">
+           <h2> <center> AJOUTER UN LIVREUR </center> </h2>
             <center>
                     <table>
                         <tr>
                             <td>
-                                 <label class="control-label" for="success"> Saisir le cin </label>
+                                 <label class="control-label"> Saisir le cin </label>
                             </td>
                             <td>
-                                 <input type="number" class="form-control" id="success" name="cin"/>
+                                 <input type="" class="form-control" id="success" name="cin"/>
                             </td>
                         </tr>
                         
                         <tr>
                             <td>
-                                 <label class="control-label" for="warning">saisir le nom</label>
+                                 <label class="control-label">saisir le nom</label>
                             </td>
                             <td>
-                                 <input type="text" class="form-control" id="warning" name="nom"/>
+                                 <input type="" class="form-control" id="warning" name="nom"/>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                  <label class="control-label" for="error">saisir le prenom</label>
+                                  <label class="control-label">saisir le prenom</label>
                             </td>
                             <td>
-                                  <input type="text" class="form-control" id="error" name="prenom"/>
+                                  <input type="" class="form-control" id="error" name="prenom"/>
                             </td>
                         </tr>
 
@@ -77,12 +78,12 @@
                             <td></td>
                             <td>
                                 </br>
-                                 <input type="submit" name="ajouter" value="ajouter" class="boutton">
+                                 <input type="submit" name="ajouter" value="ajouter" class="boutton" onclick="test()">
                             </td>
                         </tr>                       
                 </table>
                 </center>
                 </form>
-        </div>
+    
         </body>
         </html>
