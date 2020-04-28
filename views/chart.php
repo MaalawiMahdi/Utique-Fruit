@@ -9,6 +9,7 @@
  <!DOCTYPE html>  
  <html>  
       <head>  
+           <meta charset="utf-8">>
            <title> Statistiques des secteurs </title>  
            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
            <script type="text/javascript">  

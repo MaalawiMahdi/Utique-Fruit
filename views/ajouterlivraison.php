@@ -20,7 +20,7 @@
                                 <label class="control-label" for="success"> Saisir l'identifiant de la livraison </label>
                             </td>
                             <td>
-                                 <input type="" name="id_livraison"/>
+                                 <input type="" id="id_livraison"/>
                             </td>
                         </tr>
                         
@@ -29,7 +29,7 @@
                                  <label class="control-label" for="warning"> Saisir le numéro de commande </label>
                             </td>
                             <td>
-                                 <input type="" name="num_commande"/>
+                                 <input type="" id="num_commande"/>
                             </td>
                         </tr>
 

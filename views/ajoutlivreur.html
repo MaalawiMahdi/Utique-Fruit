@@ -9,7 +9,7 @@
 </head>
 <body>
      <script type="text/javascript" src="controlsaisi.js"></script>
-    <form method="POST" action="ajoutlivreur.php" name="f">
+    <form method="POST" action="ajoutlivreur.php" name="f" onsubmit="return test();">
            <h2> <center> AJOUTER UN LIVREUR </center> </h2>
             <center>
                     <table>
@@ -18,7 +18,7 @@
                                  <label class="control-label"> Saisir le cin </label>
                             </td>
                             <td>
-                                 <input type="" class="form-control" id="success" name="cin"/>
+                                 <input type="" class="form-control" id="cin" name="cin"/>
                             </td>
                         </tr>
                         
@@ -27,7 +27,7 @@
                                  <label class="control-label">saisir le nom</label>
                             </td>
                             <td>
-                                 <input type="" class="form-control" id="warning" name="nom"/>
+                                 <input type="" class="form-control" id="nom" name="nom"/>
                             </td>
                         </tr>
 
@@ -36,7 +36,7 @@
                                   <label class="control-label">saisir le prenom</label>
                             </td>
                             <td>
-                                  <input type="" class="form-control" id="error" name="prenom"/>
+                                  <input type="" class="form-control" id="prenom" name="prenom"/>
                             </td>
                         </tr>
 
@@ -78,12 +78,12 @@
                             <td></td>
                             <td>
                                 </br>
-                                 <input type="submit" name="ajouter" value="ajouter" class="boutton" onclick="test()">
+                                 <input type="submit" name="ajouter" value="ajouter" class="boutton">
                             </td>
                         </tr>                       
                 </table>
                 </center>
-                </form>
+              </form>
     
         </body>
         </html>
