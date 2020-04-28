@@ -31,12 +31,14 @@
        <h2> <center> LES LIVREURS DISPONIBLES </center> </h2>
                     <form action="../core/trielivreur.php" method="POST">
                         <input type="submit" name="" value="TRIER">
+                     
+                       <a href="chart.php"> Afficher les statistiques des secteurs </a>
                     </form>
        <br>
     </div>
 <div class="table-responsive">
     <center>
-    <table class="customers" >
+    <table class="customers" 
         <thead>
             <tr>
                 <th>Cin</th>
