@@ -7,6 +7,7 @@
 
 </head>
 <body>
+     <a href="afficherlivreur.php"> <-- Revenir à la page précédente </a></br>
 		<div class="col-md-6">
     <div class="panel panel-default">
 		 <div class="panel-heading">

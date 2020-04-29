@@ -6,15 +6,33 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-        <?PHP
+    <a href="ajouterlivraison.php"> <-- Revenir à la page précédente </a></br>
+       <?PHP
+        if(isset($_GET['tri']) and $_GET['tri']=='1')
+        {
+
         include_once "../core/livraisonC.php";
         $livraison1C=new livraisonC();
-        $listelivraisons=$livraison1C->afficherlivraisons();
+        $listelivraisons=$livraison1C->trieListelivraisons();
+        }
+        else
+        { 
+
+            include_once "../core/livraisonC.php";
+            $livraison1C=new livraisonC();
+            $listelivraisons=$livraison1C->afficherlivraisons();
+        }
         ?>
 		<div class="col-md-6">
         <div class="panel panel-default">
 		 <div class="panel-heading">
     <h2> <center> LES EVENEMENTS EN COURS </center> </h2>
+
+                    <form action="../core/trielivraison.php" method="POST">
+                        <input type="submit" name="" value="TRIER">
+                       <a href="rechercherlivraison.php"> Rechercher une livraison </a></br>
+                       <a href="tcpdf/pdflivraison.php"> Afficher la liste des livraisons en format PDF </a>
+                    </form>
     </div>
 <div class="table-responsive">
     <center>

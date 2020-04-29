@@ -18,7 +18,7 @@
     }
   else if (cin.length != 8 || isNaN(cin))
   {
-    alert("Le champ de saisi ne doit pas être numériques !");
+    alert("Le CIN du livreur doit contenir 8 chiffres !");
     return false;
   }
   else if (!(isNaN(nom)) || !isNaN(prenom))
@@ -32,5 +32,25 @@
 
 function test2()
 {
-  var id_livraison = document.get
+  var id_livraison = document.getElementById('id_livraison').value;
+  var num_commande = document.getElementById('num_commande').value;
+
+  if (id_livraison =="" || num_commande =="")
+  {
+    alert("Le champ de saisi ne doit pas être vide !");
+    return false;
+  } 
+
+  else if (num_commande.length != 8 || isNaN(num_commande))
+  {
+    alert("Le numéro de commande doit contenir 8 chiffres !");
+    return false;
+  }
+
+  else if (id_livraison.length != 8 || isNaN(id_livraison))
+  {
+    alert("L'identifiant de la livraison doit contenir 8 chiffres !");
+    return false;
+  }
+  return true;
 }
